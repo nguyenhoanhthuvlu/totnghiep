@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chúc mừng Anh Thư đã tốt nghiệp, cử nhân Văn Lang — Khóa 28.">
+  <meta property="og:title" content="Chúc mừng tốt nghiệp — Thư">
+  <meta property="og:description" content="Chúc mừng Anh Thư đã tốt nghiệp, cử nhân Văn Lang — Khóa 28.">
+  <meta property="og:image" content="assets/avatar.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" onerror="this.onerror=null;this.href='styles.css';">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="nav-pill nav-pill--main">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-icon" aria-hidden="true">
+          <img src="assets/avatar.png" alt="Thư" class="nav-logo-avatar">
+        </span>
+        <span class="nav-logo-text">Thư</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Điều hướng chính">
+        <span class="nav-indicator" id="nav-indicator" aria-hidden="true"></span>
+        <a href="#hero">Khoảnh khắc</a>
+        <a href="#reveal">Lời chúc</a>
+        <a href="#changes">Kỷ niệm</a>
+        <a href="#closing">Lời cuối</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-focus-overlay" id="nav-focus-overlay" aria-hidden="true"></div>
+
+  <div class="scroll-experience" id="scroll-experience">
+
+    <!-- Pinned background — shared hero + reveal -->
+    <div class="pinned-bg" id="pinned-bg">
+      <div class="pinned-bg-inner" id="pinned-bg-inner">
+        <img
+          src="assets/graduation-hero.jpg"
+          alt=""
+          class="pinned-bg-image"
+          id="pinned-bg-image"
+          aria-hidden="true"
+        >
+        <div class="pinned-bg-overlay pinned-bg-overlay--hero" id="overlay-hero"></div>
+        <div class="pinned-bg-overlay pinned-bg-overlay--reveal" id="overlay-reveal"></div>
+
+        <div class="hero-marquee" id="hero-marquee" aria-hidden="true">
+          <div class="marquee-wrapper">
+            <div class="marquee-track">
+              <div class="marquee-group">
+                <span class="marquee-item">ANH THƯ</span>
+                <span class="marquee-item">KHÓA 28</span>
+                <span class="marquee-item">VĂN LANG UNIVERSITY</span>
+                <span class="marquee-item">ANH THƯ</span>
+                <span class="marquee-item">KHÓA 28</span>
+                <span class="marquee-item">VĂN LANG UNIVERSITY</span>
+                <span class="marquee-item">ANH THƯ</span>
+                <span class="marquee-item">KHÓA 28</span>
+                <span class="marquee-item">VĂN LANG UNIVERSITY</span>
+              </div>
+              <div class="marquee-group" aria-hidden="true">
+                <span class="marquee-item">ANH THƯ</span>
+                <span class="marquee-item">KHÓA 28</span>
+                <span class="marquee-item">VĂN LANG UNIVERSITY</span>
+                <span class="marquee-item">ANH THƯ</span>
+                <span class="marquee-item">KHÓA 28</span>
+                <span class="marquee-item">VĂN LANG UNIVERSITY</span>
+                <span class="marquee-item">ANH THƯ</span>
+                <span class="marquee-item">KHÓA 28</span>
+                <span class="marquee-item">VĂN LANG UNIVERSITY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <div class="hero-stage" id="hero-stage">
+      <section class="hero" id="hero">
+        <div class="hero-content" id="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-title-line hero-title-line--nowrap">Chúc mừng Thư</span>
+            <span class="hero-title-line">đã tốt nghiệp,</span>
+            <em class="hero-title-line hero-title-line--italic hero-title-line--nowrap">cử nhân Văn Lang.</em>
+          </h1>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Section 2: Text Reveal -->
+    <section class="reveal-section" id="reveal">
+      <div class="reveal-pin">
+        <div class="reveal-content">
+          <h2 class="reveal-title" id="reveal-title">
+            <span class="reveal-line">Tự hào về những nỗ lực Thư đã bỏ ra suốt 4 năm qua.</span>
+            <span class="reveal-line">Mọi người luôn ở đây, đồng hành cùng Thư trên mọi chặng đường tiếp theo.</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Section 3: Memory Gallery (Polaroid) -->
+  <section class="changes-section" id="changes" aria-label="Kỷ niệm">
+    <div class="changes-track" id="changes-track">
+      <div class="changes-pin" id="changes-pin">
+        <div class="changes-stage">
+
+          <!-- Heading block -->
+          <div class="changes-header">
+            <span class="changes-eyebrow">Bộ sưu tập kỷ niệm</span>
+            <h2 class="changes-heading" id="changes-heading">
+              <span class="heading-half heading-half--left" id="heading-left">
+                <span class="word">KỶ</span>
+                <span class="word">NIỆM</span>
+                <span class="word">CÙNG</span>
+                <span class="word">GIA</span>
+                <span class="word">ĐÌNH</span>
+              </span>
+              <span class="heading-half heading-half--right" id="heading-right">
+                <span class="word">VÀ</span>
+                <span class="word">BẠN</span>
+                <span class="word">BÈ</span>
+                <span class="word">CỦA</span>
+                <span class="word">THƯ</span>
+              </span>
+            </h2>
+          </div>
+
+          <!-- Gallery carousel -->
+          <div class="memories-gallery" id="memories-gallery">
+            <div class="memories-carousel">
+              <div class="memories-stack" id="memories-stack">
+                <figure class="memory-card"><img src="assets/memories/memory-01.jpg" alt="Kỷ niệm tốt nghiệp cùng gia đình" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-02.jpg" alt="Kỷ niệm tốt nghiệp cùng bạn bè" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-03.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-04.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-05.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-06.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-07.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-08.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-09.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-10.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-11.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-12.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-13.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-14.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-15.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-16.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-17.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-18.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-19.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+                <figure class="memory-card"><img src="assets/memories/memory-20.jpg" alt="Kỷ niệm tốt nghiệp" loading="lazy" decoding="async"></figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom controls bar -->
+          <div class="memories-ui" id="memories-ui">
+            <button type="button" class="memories-btn memories-btn--prev" id="memories-prev" aria-label="Ảnh trước">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 6.5L9 12l5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Trước</span>
+            </button>
+
+            <div class="memories-status">
+              <p class="memories-counter" id="memories-counter" aria-live="polite">
+                <span class="memories-counter-current" id="memories-current">01</span>
+                <span class="memories-counter-sep" aria-hidden="true"> / </span>
+                <span class="memories-counter-total" id="memories-total">20</span>
+              </p>
+              <div class="memories-progress" aria-hidden="true">
+                <div class="memories-progress-track">
+                  <div class="memories-progress-fill" id="memories-progress-fill"></div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="memories-btn memories-btn--next" id="memories-next" aria-label="Ảnh sau">
+              <span>Sau</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 6.5L15 12l-5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Lời cuối — Cinematic dark outro -->
+  <section class="closing-section" id="closing" aria-label="Lời cuối">
+    <div class="closing-inner">
+      <!-- Left: large portrait photo -->
+      <figure class="closing-media cl-reveal">
+        <div class="closing-media-frame">
+          <img
+            src="assets/closing-photo.jpg"
+            alt="Thư trong ngày tốt nghiệp"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <figcaption class="closing-media-caption">Văn Lang University · Khóa 28 · 2026</figcaption>
+      </figure>
+
+      <!-- Right: content -->
+      <div class="closing-content">
+        <p class="closing-eyebrow cl-reveal">Lời cuối</p>
+
+        <h2 class="closing-title cl-reveal">Đôi lời,<br><em>yêu thương<br>gửi tới Thư.</em></h2>
+
+        <div class="closing-divider cl-reveal" aria-hidden="true"></div>
+
+        <div class="closing-body cl-reveal">
+          <p>Thư về nhà rồi, góc nhỏ Sài Gòn thiếu mất một bạn nhậu, thiếu cả những buổi ngồi lại kể nhau nghe chuyện vui buồn.</p>
+          <p>Tấm bằng hôm nay không chỉ là kết thúc của 4 năm đại học, mà là lời chứng nhận cho tất cả sự kiên cường và nỗ lực thầm lặng của Thư suốt thời gian qua. Về quê xả hết mệt mỏi, rồi sớm quay lại Sài Gòn. Tụi mình hẹn nhau một buổi nhậu sống chết, và để Thư biết rằng dù thế nào, vẫn luôn có người ở đây phía sau ủng hộ Thư hết lòng.</p>
+        </div>
+
+        <p class="closing-sign cl-reveal">— CHAT GPT</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="closing-footer cl-reveal">
+      <span>Anh Thư · Cử nhân Văn Lang · 2026</span>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='script.js';document.body.appendChild(s);"></script>
+</body>
+</html>
